@@ -1,0 +1,19 @@
+<div class="cocktail-card">
+	<div class="cocktail-img">
+		<img src="<perch:content id="bev_image" type="image" label="Image" width="350" height="350" crop="true" help="images should be 350px by 350px" order="2"/>"/>
+	</div>
+	<div class="content">
+		<h2><perch:content id="bev_name" type="text" label="Cocktail Name" required="true" order="1" title="true"/></h2>
+		<ul>
+			<li><perch:content id="ing_item1" type="text" label="Ingredient Item" required="true" order="3"/></li>
+			<perch:if exists="ing_item2"><li><perch:content id="ing_item2" type="text" label="Ingredient Item" order="4"/></li></perch:if>
+			<perch:if exists="ing_item3"><li><perch:content id="ing_item3" type="text" label="Ingredient Item" order="5"/></li></perch:if>
+			<perch:if exists="ing_item4"><li><perch:content id="ing_item4" type="text" label="Ingredient Item" order="6"/></li></perch:if>
+			<perch:if exists="ing_item5"><li><perch:content id="ing_item5" type="text" label="Ingredient Item" order="7"/></li></perch:if>
+			<perch:if exists="ing_item6"><li><perch:content id="ing_item6" type="text" label="Ingredient Item" order="8"/></li></perch:if>
+			<perch:if exists="ing_item7"><li><perch:content id="ing_item7" type="text" label="Ingredient Item" order="9"/></li></perch:if>
+			<perch:if exists="ing_item8"><li><perch:content id="ing_item8" type="text" label="Ingredient Item" order="10"/></li></perch:if>
+		</ul>
+		<perch:content id="desc" type="textarea" label="Instructions" order="11" textile="true" editor="markitup" size="m" required="true" html="true"/>
+	</div>
+</div>
